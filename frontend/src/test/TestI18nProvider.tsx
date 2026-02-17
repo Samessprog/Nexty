@@ -4,16 +4,21 @@ import { I18nextProvider, initReactI18next } from 'react-i18next'
 import { MemoryRouter } from 'react-router-dom'
 
 import { ThemeProvider } from '@/context/ThemeContext'
+import de from '@/i18n/locales/de.json'
 import en from '@/i18n/locales/en.json'
+import pl from '@/i18n/locales/pl.json'
 
 const testI18n = i18n.createInstance()
 
 void testI18n.use(initReactI18next).init({
   resources: {
+    de: { translation: de },
     en: { translation: en },
+    pl: { translation: pl },
   },
   lng: 'en',
   fallbackLng: 'en',
+  supportedLngs: ['en', 'pl', 'de'],
   interpolation: {
     escapeValue: false,
   },
