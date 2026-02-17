@@ -33,5 +33,23 @@
       "passwordNumber": "Password must contain at least one number",
       "passwordSpecial": "Password must contain at least one special character"
     }
+  },
+  "auth": {
+    "signingIn": "Signing in...",
+    "errors": {
+      "invalidCredentials": "Invalid email or password. Please try again.",
+      "userNotFound": "No account found with this email address.",
+      "userNotConfirmed": "Your account has not been confirmed. Please check your email.",
+      "tooManyRequests": "Too many attempts. Please try again later.",
+      "limitExceeded": "Attempt limit exceeded. Please try again later.",
+      "alreadyAuthenticated": "You are already signed in.",
+      "network": "Network error. Please check your connection.",
+      "unknown": "An unexpected error occurred. Please try again."
+    }
+  },
+  "dashboard": {
+    "heading": "Dashboard",
+    "welcome": "Welcome, {{userId}}",
+    "logout": "Logout"
   }
 }

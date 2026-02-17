@@ -3,6 +3,15 @@ import { render, screen } from '@testing-library/react'
 import LoginPage from '@/pages/LoginPage'
 import TestWrapper from '@/test/TestI18nProvider'
 
+vi.mock('@/hooks/useLogin', () => ({
+  useLogin: () => ({
+    login: vi.fn(),
+    isSubmitting: false,
+    authError: null,
+    clearAuthError: vi.fn(),
+  }),
+}))
+
 describe('LoginPage', () => {
   it('renders the full login page', () => {
     render(

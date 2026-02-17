@@ -33,5 +33,23 @@
       "passwordNumber": "Hasło musi zawierać co najmniej jedną cyfrę",
       "passwordSpecial": "Hasło musi zawierać co najmniej jeden znak specjalny"
     }
+  },
+  "auth": {
+    "signingIn": "Logowanie...",
+    "errors": {
+      "invalidCredentials": "Nieprawidłowy e-mail lub hasło. Spróbuj ponownie.",
+      "userNotFound": "Nie znaleziono konta z tym adresem e-mail.",
+      "userNotConfirmed": "Twoje konto nie zostało potwierdzone. Sprawdź swoją skrzynkę e-mail.",
+      "tooManyRequests": "Zbyt wiele prób. Spróbuj ponownie później.",
+      "limitExceeded": "Przekroczono limit prób. Spróbuj ponownie później.",
+      "alreadyAuthenticated": "Jesteś już zalogowany.",
+      "network": "Błąd sieci. Sprawdź swoje połączenie.",
+      "unknown": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie."
+    }
+  },
+  "dashboard": {
+    "heading": "Panel główny",
+    "welcome": "Witaj, {{userId}}",
+    "logout": "Wyloguj"
   }
 }

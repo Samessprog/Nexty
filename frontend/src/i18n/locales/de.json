@@ -33,5 +33,23 @@
       "passwordNumber": "Passwort muss mindestens eine Zahl enthalten",
       "passwordSpecial": "Passwort muss mindestens ein Sonderzeichen enthalten"
     }
+  },
+  "auth": {
+    "signingIn": "Anmeldung läuft...",
+    "errors": {
+      "invalidCredentials": "Ungültige E-Mail oder Passwort. Bitte versuchen Sie es erneut.",
+      "userNotFound": "Kein Konto mit dieser E-Mail-Adresse gefunden.",
+      "userNotConfirmed": "Ihr Konto wurde nicht bestätigt. Bitte überprüfen Sie Ihre E-Mail.",
+      "tooManyRequests": "Zu viele Versuche. Bitte versuchen Sie es später erneut.",
+      "limitExceeded": "Versuchslimit überschritten. Bitte versuchen Sie es später erneut.",
+      "alreadyAuthenticated": "Sie sind bereits angemeldet.",
+      "network": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    }
+  },
+  "dashboard": {
+    "heading": "Dashboard",
+    "welcome": "Willkommen, {{userId}}",
+    "logout": "Abmelden"
   }
 }

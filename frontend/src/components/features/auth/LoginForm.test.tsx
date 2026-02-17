@@ -4,6 +4,15 @@ import userEvent from '@testing-library/user-event'
 import LoginForm from '@/components/features/auth/LoginForm'
 import TestWrapper from '@/test/TestI18nProvider'
 
+vi.mock('@/hooks/useLogin', () => ({
+  useLogin: () => ({
+    login: vi.fn(),
+    isSubmitting: false,
+    authError: null,
+    clearAuthError: vi.fn(),
+  }),
+}))
+
 describe('LoginForm', () => {
   it('renders email and password inputs', () => {
     render(
