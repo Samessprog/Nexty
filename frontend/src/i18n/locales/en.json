@@ -1,0 +1,37 @@
+{
+  "brand": {
+    "name": "KZN Nexus",
+    "tagline": "Evolve. Improve. Repeat.",
+    "description": "Structured Kaizen for modern teams. Measure, adapt, and optimize every iteration."
+  },
+  "login": {
+    "heading": "KZN Nexus",
+    "subheading": "Initialize your continuous improvement workspace.",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "dev@kznnexus.io",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••••••",
+    "forgotPassword": "Forgot Password?",
+    "submit": "Login",
+    "divider": "Or access via Federated Identity",
+    "google": "Google Workspace",
+    "linkedin": "LinkedIn OIDC",
+    "recaptcha": "Protected by reCAPTCHA and subject to the Google",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "newUser": "New to KZN Nexus?",
+    "requestAccess": "Request Access",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "errors": {
+      "emailRequired": "Email address is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordUppercase": "Password must contain at least one uppercase letter",
+      "passwordLowercase": "Password must contain at least one lowercase letter",
+      "passwordNumber": "Password must contain at least one number",
+      "passwordSpecial": "Password must contain at least one special character"
+    }
+  }
+}

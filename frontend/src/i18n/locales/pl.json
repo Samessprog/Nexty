@@ -1,0 +1,37 @@
+{
+  "brand": {
+    "name": "KZN Nexus",
+    "tagline": "Rozwijaj. Ulepszaj. Powtarzaj.",
+    "description": "Strukturalny Kaizen dla nowoczesnych zespołów. Mierz, adaptuj i optymalizuj każdą iterację."
+  },
+  "login": {
+    "heading": "KZN Nexus",
+    "subheading": "Zainicjuj swoją przestrzeń ciągłego doskonalenia.",
+    "emailLabel": "Adres e-mail",
+    "emailPlaceholder": "dev@kznnexus.io",
+    "passwordLabel": "Hasło",
+    "passwordPlaceholder": "••••••••••••",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "submit": "Zaloguj",
+    "divider": "Lub uzyskaj dostęp przez tożsamość federacyjną",
+    "google": "Google Workspace",
+    "linkedin": "LinkedIn OIDC",
+    "recaptcha": "Chronione przez reCAPTCHA i podlega Google",
+    "privacyPolicy": "Polityce prywatności",
+    "termsOfService": "Warunkom korzystania z usługi",
+    "newUser": "Nowy w KZN Nexus?",
+    "requestAccess": "Poproś o dostęp",
+    "showPassword": "Pokaż hasło",
+    "hidePassword": "Ukryj hasło",
+    "errors": {
+      "emailRequired": "Adres e-mail jest wymagany",
+      "emailInvalid": "Wprowadź prawidłowy adres e-mail",
+      "passwordRequired": "Hasło jest wymagane",
+      "passwordMinLength": "Hasło musi mieć co najmniej 8 znaków",
+      "passwordUppercase": "Hasło musi zawierać co najmniej jedną wielką literę",
+      "passwordLowercase": "Hasło musi zawierać co najmniej jedną małą literę",
+      "passwordNumber": "Hasło musi zawierać co najmniej jedną cyfrę",
+      "passwordSpecial": "Hasło musi zawierać co najmniej jeden znak specjalny"
+    }
+  }
+}
