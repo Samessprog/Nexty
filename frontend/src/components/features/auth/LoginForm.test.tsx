@@ -21,7 +21,7 @@ describe('LoginForm', () => {
         <LoginForm />
       </TestWrapper>,
     )
-    expect(screen.getByRole('button', { name: /authenticate/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /login/i })).toBeInTheDocument()
   })
 
   it('renders OAuth buttons', () => {
@@ -60,7 +60,7 @@ describe('LoginForm', () => {
         </TestWrapper>,
       )
 
-      await user.click(screen.getByRole('button', { name: /authenticate/i }))
+      await user.click(screen.getByRole('button', { name: /login/i }))
 
       await waitFor(() => {
         expect(screen.getByText('Email address is required')).toBeInTheDocument()
@@ -133,7 +133,7 @@ describe('LoginForm', () => {
 
       await user.type(screen.getByLabelText('Email Address'), 'user@example.com')
       await user.type(screen.getByLabelText('Password'), 'StrongP@ss1')
-      await user.click(screen.getByRole('button', { name: /authenticate/i }))
+      await user.click(screen.getByRole('button', { name: /login/i }))
 
       await waitFor(() => {
         expect(screen.queryByRole('alert')).not.toBeInTheDocument()

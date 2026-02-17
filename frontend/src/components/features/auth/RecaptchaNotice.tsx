@@ -6,13 +6,13 @@ export default function RecaptchaNotice() {
 
   return (
     <div className="mt-10 text-center">
-      <p className="text-xs text-slate-400">
+      <p className="text-xs text-slate-400 dark:text-slate-500">
         {t('login.recaptcha')}{' '}
-        <Link to="/privacy" className="underline hover:text-slate-600">
+        <Link to="/privacy" className="underline hover:text-slate-600 dark:hover:text-slate-300">
           {t('login.privacyPolicy')}
         </Link>{' '}
         and{' '}
-        <Link to="/terms" className="underline hover:text-slate-600">
+        <Link to="/terms" className="underline hover:text-slate-600 dark:hover:text-slate-300">
           {t('login.termsOfService')}
         </Link>
         .

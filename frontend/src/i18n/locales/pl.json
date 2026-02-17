@@ -12,7 +12,7 @@
     "passwordLabel": "Hasło",
     "passwordPlaceholder": "••••••••••••",
     "forgotPassword": "Zapomniałeś hasła?",
-    "submit": "Uwierzytelnij",
+    "submit": "Zaloguj",
     "divider": "Lub uzyskaj dostęp przez tożsamość federacyjną",
     "google": "Google Workspace",
     "linkedin": "LinkedIn OIDC",

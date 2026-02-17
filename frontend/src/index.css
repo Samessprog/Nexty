@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-brand-blue: #195de6;
   --color-brand-black: #09090b;
@@ -21,7 +23,7 @@
 
 @layer base {
   body {
-    @apply bg-white font-display text-slate-900 antialiased;
+    @apply bg-white font-display text-slate-900 antialiased dark:bg-zinc-900 dark:text-white;
     margin: 0;
   }
 }
@@ -66,4 +68,12 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #52525b;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #71717a;
 }

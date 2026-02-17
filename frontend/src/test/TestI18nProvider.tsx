@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { I18nextProvider, initReactI18next } from 'react-i18next'
 import { MemoryRouter } from 'react-router-dom'
 
+import { ThemeProvider } from '@/context/ThemeContext'
 import en from '@/i18n/locales/en.json'
 
 const testI18n = i18n.createInstance()
@@ -24,7 +25,9 @@ export { testI18n }
 export default function TestWrapper({ children }: { children: ReactNode }) {
   return (
     <I18nextProvider i18n={testI18n}>
-      <MemoryRouter>{children}</MemoryRouter>
+      <ThemeProvider>
+        <MemoryRouter>{children}</MemoryRouter>
+      </ThemeProvider>
     </I18nextProvider>
   )
 }

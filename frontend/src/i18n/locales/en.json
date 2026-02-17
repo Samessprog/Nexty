@@ -12,7 +12,7 @@
     "passwordLabel": "Password",
     "passwordPlaceholder": "••••••••••••",
     "forgotPassword": "Forgot Password?",
-    "submit": "Authenticate",
+    "submit": "Login",
     "divider": "Or access via Federated Identity",
     "google": "Google Workspace",
     "linkedin": "LinkedIn OIDC",
