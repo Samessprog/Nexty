@@ -1,9 +1,9 @@
-import path from 'node:path'
 
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
+import path from "path"
+
 export default defineConfig({
   plugins: [
     react({
@@ -15,6 +15,13 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+    },
+  },
+  server: {
+    host: true,          // Pozwala na dostęp do serwera z zewnątrz kontenera
+    port: 5173,          // Standardowy port Vite
+    watch: {
+      usePolling: true,  // Wymagane, aby Docker na Windows/Mac widział zmiany w plikach
     },
   },
 })
