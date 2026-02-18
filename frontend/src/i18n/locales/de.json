@@ -7,8 +7,7 @@
   "login": {
     "heading": "KZN Nexus",
     "subheading": "Initialisieren Sie Ihren Arbeitsbereich für kontinuierliche Verbesserung.",
-    "emailLabel": "E-Mail-Adresse",
-    "emailPlaceholder": "dev@kznnexus.io",
+    "emailLabel": "E-Mail",
     "passwordLabel": "Passwort",
     "passwordPlaceholder": "••••••••••••",
     "forgotPassword": "Passwort vergessen?",
@@ -24,7 +23,7 @@
     "showPassword": "Passwort anzeigen",
     "hidePassword": "Passwort verbergen",
     "errors": {
-      "emailRequired": "E-Mail-Adresse ist erforderlich",
+      "emailRequired": "E-Mail ist erforderlich",
       "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
       "passwordRequired": "Passwort ist erforderlich",
       "passwordMinLength": "Passwort muss mindestens 8 Zeichen lang sein",
@@ -33,5 +32,165 @@
       "passwordNumber": "Passwort muss mindestens eine Zahl enthalten",
       "passwordSpecial": "Passwort muss mindestens ein Sonderzeichen enthalten"
     }
+  },
+  "auth": {
+    "signingIn": "Anmeldung läuft...",
+    "errors": {
+      "invalidCredentials": "Ungültige E-Mail oder Passwort. Bitte versuchen Sie es erneut.",
+      "userNotFound": "Kein Konto mit dieser E-Mail-Adresse gefunden.",
+      "userNotConfirmed": "Ihr Konto wurde nicht bestätigt. Bitte überprüfen Sie Ihre E-Mail.",
+      "tooManyRequests": "Zu viele Versuche. Bitte versuchen Sie es später erneut.",
+      "limitExceeded": "Versuchslimit überschritten. Bitte versuchen Sie es später erneut.",
+      "alreadyAuthenticated": "Sie sind bereits angemeldet.",
+      "network": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "invalidPassword": "Das neue Passwort erfüllt nicht die Anforderungen.",
+      "passwordResetRequired": "Ein Passwort-Reset ist erforderlich. Bitte kontaktieren Sie den Support."
+    }
+  },
+  "newPassword": {
+    "heading": "Neues Passwort festlegen",
+    "subheading": "Ihr temporäres Passwort ist abgelaufen. Bitte legen Sie ein neues Passwort fest.",
+    "newPasswordLabel": "Neues Passwort",
+    "confirmPasswordLabel": "Passwort bestätigen",
+    "submit": "Passwort festlegen",
+    "submitting": "Passwort wird festgelegt...",
+    "backToLogin": "Zurück zur Anmeldung",
+    "errors": {
+      "required": "Neues Passwort ist erforderlich",
+      "confirmRequired": "Bitte bestätigen Sie Ihr Passwort",
+      "minLength": "Passwort muss mindestens 8 Zeichen lang sein",
+      "uppercase": "Passwort muss mindestens einen Großbuchstaben enthalten",
+      "lowercase": "Passwort muss mindestens einen Kleinbuchstaben enthalten",
+      "number": "Passwort muss mindestens eine Zahl enthalten",
+      "special": "Passwort muss mindestens ein Sonderzeichen enthalten",
+      "mismatch": "Passwörter stimmen nicht überein"
+    }
+  },
+  "dashboard": {
+    "heading": "Dashboard",
+    "welcome": "Willkommen, {{userId}}",
+    "logout": "Abmelden",
+    "greeting": "Guten Morgen, Jan",
+    "subtitle": "Panel für Meldungen und Statistiken",
+    "submitNewIdea": "Neue Idee einreichen",
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "mySubmissions": "Meine Meldungen",
+      "rankings": "Ranglisten",
+      "rewards": "Prämien",
+      "system": "System",
+      "settings": "Einstellungen",
+      "logout": "Abmelden",
+      "notifications": "Benachrichtigungen",
+      "obligations": "Pflichten",
+      "social": "Soziales",
+      "collapse": "Seitenleiste einklappen",
+      "expand": "Seitenleiste ausklappen"
+    },
+    "stats": {
+      "points": "Punkte",
+      "ranking": "Ranglistenposition",
+      "submissions": "Alle Meldungen",
+      "implemented": "Umgesetzte Vorschläge",
+      "thisMonth": "+50 diesen Monat",
+      "positions": "2 Pos",
+      "successRate": "50% Erfolgsrate",
+      "trend": {
+        "pointsUp": "+12% vs letzter Monat",
+        "rankingUp": "+3 Positionen",
+        "submissionsUp": "+18% vs letzter Monat",
+        "implementedFlat": "Wie letzter Monat"
+      }
+    },
+    "statuses": {
+      "title": "Meldungsstatus",
+      "new": "Neu",
+      "inVerification": "In Überprüfung",
+      "inImplementation": "In Umsetzung",
+      "completed": "Abgeschlossen",
+      "rejected": "Abgelehnt"
+    },
+    "chart": {
+      "title": "Meldungseffizienz",
+      "subtitle": "Gesamt vs Umgesetzt (Letzte 6 Monate)",
+      "thirtyDays": "30 Tage",
+      "sixMonths": "6 Monate",
+      "year": "Jahr",
+      "allSubmissions": "Alle Meldungen",
+      "implemented": "Umgesetzt",
+      "avgDays": "Durchschn. Umsetzungszeit (Tage)",
+      "months": {
+        "jan": "JAN",
+        "feb": "FEB",
+        "mar": "MÄR",
+        "apr": "APR",
+        "may": "MAI",
+        "jun": "JUN"
+      }
+    },
+    "streak": {
+      "title": "Kaizen-Serie",
+      "days": "{{count}} Tage in Folge",
+      "best": "Rekord: {{count}} Tage"
+    },
+    "activity": {
+      "title": "Letzte Aktivität",
+      "tabMyActivity": "Meine Aktivität",
+      "tabDepartment": "Abteilungsänderungen",
+      "ideaAccepted": "Idee akzeptiert",
+      "ideaAcceptedDesc": "Meldung <mono>#2941</mono> wurde angenommen.",
+      "newComment": "Neuer Kommentar",
+      "newCommentDesc": "Schichtleiter hat eine Anmerkung hinzugefügt.",
+      "actionRequired": "Aktion erforderlich",
+      "actionRequiredDesc": "Beschreibung in Meldung <mono>#2930</mono> vervollständigen.",
+      "reward": "Prämie",
+      "rewardDesc": "+50 Pkt. für Innovativität vergeben.",
+      "time": {
+        "twoHoursAgo": "Vor 2 Stunden",
+        "yesterday": "Gestern, 14:30",
+        "twoDaysAgo": "Vor 2 Tagen",
+        "threeDaysAgo": "Vor 3 Tagen"
+      }
+    },
+    "department": {
+      "author": {
+        "anna": "Anna Nowak",
+        "marek": "Marek Wiśniewski",
+        "katarzyna": "Katarzyna Zielińska",
+        "tomek": "Tomek Lewandowski"
+      },
+      "ergonomicStations": "Ergonomische Arbeitsplatzanpassungen an Linie B umgesetzt.",
+      "safetyProtocol": "Sicherheitsprotokoll für Stapleroperationen aktualisiert.",
+      "qualityChecklist": "Neue Qualitätsprüfliste für eingehende Materialien eingeführt.",
+      "toolOrganization": "Werkzeuglager nach 5S-Methodik neu organisiert.",
+      "name": {
+        "assembly": "Montage",
+        "warehouse": "Lager",
+        "quality": "Qualitätskontrolle",
+        "maintenance": "Instandhaltung"
+      }
+    },
+    "suggestion": {
+      "trigger": "Vorschlag machen",
+      "sections": {
+        "submissions": "Meldungen",
+        "resources": "Ressourcen",
+        "community": "Gemeinschaft"
+      },
+      "mySubmissions": "Meine Meldungen",
+      "departmentSubmissions": "Abteilungsmeldungen",
+      "organizationSubmissions": "Organisationsmeldungen",
+      "howItWorks": "So funktioniert es",
+      "tutorial": "Anleitung",
+      "challenges": "Herausforderungen",
+      "rankingsAwards": "Ranglisten & Auszeichnungen",
+      "surveys": "Umfragen"
+    },
+    "user": {
+      "name": "Jan Kowalski",
+      "role": "Linienbediener"
+    },
+    "version": "v2.5.1 Nexus Pro"
   }
 }

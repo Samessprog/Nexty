@@ -28,7 +28,13 @@ export default function HexagonalDesign() {
             strokeDasharray="2 2"
             strokeWidth="0.3"
           />
-          <circle className="animate-pulse" cx="100" cy="100" fill="#195de6" r="2" />
+          <circle
+            className="animate-pulse"
+            cx="100"
+            cy="100"
+            fill="#195de6"
+            r="2"
+          />
           <circle cx="170" cy="60" fill="white" opacity="0.5" r="1.5" />
           <circle cx="30" cy="60" fill="white" opacity="0.5" r="1.5" />
           <circle cx="100" cy="180" fill="white" opacity="0.5" r="1.5" />
@@ -59,5 +65,5 @@ export default function HexagonalDesign() {
         </svg>
       </div>
     </div>
-  )
+  );
 }

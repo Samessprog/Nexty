@@ -1,10 +1,10 @@
-import { Hexagon } from '@phosphor-icons/react'
-import { useTranslation } from 'react-i18next'
+import { Hexagon } from "@phosphor-icons/react";
+import { useTranslation } from "react-i18next";
 
-import HexagonalDesign from '@/components/layout/HexagonalDesign'
+import HexagonalDesign from "@/components/layout/HexagonalDesign";
 
 export default function DesignPanel() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <div className="hidden lg:flex lg:w-1/2 relative flex-col justify-between p-12 abstract-bg overflow-hidden">
@@ -13,7 +13,7 @@ export default function DesignPanel() {
           <Hexagon size={20} weight="bold" />
         </div>
         <h2 className="text-white text-lg font-bold tracking-tight font-mono">
-          {t('brand.name')}
+          {t("brand.name")}
         </h2>
       </div>
 
@@ -21,12 +21,12 @@ export default function DesignPanel() {
 
       <div className="relative z-10 max-w-md">
         <h1 className="text-white text-4xl font-bold leading-tight tracking-tight mb-4">
-          {t('brand.tagline')}
+          {t("brand.tagline")}
         </h1>
         <p className="text-zinc-400 text-sm font-light leading-relaxed">
-          {t('brand.description')}
+          {t("brand.description")}
         </p>
       </div>
     </div>
-  )
+  );
 }
