@@ -7,8 +7,7 @@
   "login": {
     "heading": "KZN Nexus",
     "subheading": "Initialize your continuous improvement workspace.",
-    "emailLabel": "Email Address",
-    "emailPlaceholder": "dev@kznnexus.io",
+    "emailLabel": "Email",
     "passwordLabel": "Password",
     "passwordPlaceholder": "••••••••••••",
     "forgotPassword": "Forgot Password?",
@@ -24,7 +23,7 @@
     "showPassword": "Show password",
     "hidePassword": "Hide password",
     "errors": {
-      "emailRequired": "Email address is required",
+      "emailRequired": "Email is required",
       "emailInvalid": "Please enter a valid email address",
       "passwordRequired": "Password is required",
       "passwordMinLength": "Password must be at least 8 characters",
@@ -44,12 +43,154 @@
       "limitExceeded": "Attempt limit exceeded. Please try again later.",
       "alreadyAuthenticated": "You are already signed in.",
       "network": "Network error. Please check your connection.",
-      "unknown": "An unexpected error occurred. Please try again."
+      "unknown": "An unexpected error occurred. Please try again.",
+      "invalidPassword": "The new password does not meet the requirements.",
+      "passwordResetRequired": "A password reset is required. Please contact support."
+    }
+  },
+  "newPassword": {
+    "heading": "Set New Password",
+    "subheading": "Your temporary password has expired. Please set a new password.",
+    "newPasswordLabel": "New Password",
+    "confirmPasswordLabel": "Confirm Password",
+    "submit": "Set Password",
+    "submitting": "Setting password...",
+    "backToLogin": "Back to Login",
+    "errors": {
+      "required": "New password is required",
+      "confirmRequired": "Please confirm your password",
+      "minLength": "Password must be at least 8 characters",
+      "uppercase": "Password must contain at least one uppercase letter",
+      "lowercase": "Password must contain at least one lowercase letter",
+      "number": "Password must contain at least one number",
+      "special": "Password must contain at least one special character",
+      "mismatch": "Passwords do not match"
     }
   },
   "dashboard": {
     "heading": "Dashboard",
     "welcome": "Welcome, {{userId}}",
-    "logout": "Logout"
+    "logout": "Logout",
+    "greeting": "Good morning, Jan",
+    "subtitle": "Submissions and statistics panel",
+    "submitNewIdea": "Submit new idea",
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "mySubmissions": "My Submissions",
+      "rankings": "Rankings",
+      "rewards": "Rewards",
+      "system": "System",
+      "settings": "Settings",
+      "logout": "Logout",
+      "notifications": "Notifications",
+      "obligations": "Obligations",
+      "social": "Social",
+      "collapse": "Collapse sidebar",
+      "expand": "Expand sidebar"
+    },
+    "stats": {
+      "points": "Points",
+      "ranking": "Ranking Position",
+      "submissions": "All Submissions",
+      "implemented": "Implemented Suggestions",
+      "thisMonth": "+50 this month",
+      "positions": "2 pos",
+      "successRate": "50% success rate",
+      "trend": {
+        "pointsUp": "+12% vs last month",
+        "rankingUp": "+3 positions",
+        "submissionsUp": "+18% vs last month",
+        "implementedFlat": "Same as last month"
+      }
+    },
+    "statuses": {
+      "title": "Submission Status",
+      "new": "New",
+      "inVerification": "In Verification",
+      "inImplementation": "In Implementation",
+      "completed": "Completed",
+      "rejected": "Rejected"
+    },
+    "chart": {
+      "title": "Submission Efficiency",
+      "subtitle": "Total vs Implemented (Last 6 months)",
+      "thirtyDays": "30 Days",
+      "sixMonths": "6 Months",
+      "year": "Year",
+      "allSubmissions": "All submissions",
+      "implemented": "Implemented",
+      "avgDays": "Avg. Implementation Time (days)",
+      "months": {
+        "jan": "JAN",
+        "feb": "FEB",
+        "mar": "MAR",
+        "apr": "APR",
+        "may": "MAY",
+        "jun": "JUN"
+      }
+    },
+    "streak": {
+      "title": "Kaizen Streak",
+      "days": "{{count}} day streak",
+      "best": "Best: {{count}} days"
+    },
+    "activity": {
+      "title": "Recent Activity",
+      "tabMyActivity": "My Activity",
+      "tabDepartment": "Department Changes",
+      "ideaAccepted": "Idea accepted",
+      "ideaAcceptedDesc": "Submission <mono>#2941</mono> has been accepted.",
+      "newComment": "New comment",
+      "newCommentDesc": "Shift manager added a note.",
+      "actionRequired": "Action required",
+      "actionRequiredDesc": "Complete the description in submission <mono>#2930</mono>.",
+      "reward": "Reward",
+      "rewardDesc": "+50 pts awarded for innovation.",
+      "time": {
+        "twoHoursAgo": "2 hours ago",
+        "yesterday": "Yesterday, 14:30",
+        "twoDaysAgo": "2 days ago",
+        "threeDaysAgo": "3 days ago"
+      }
+    },
+    "department": {
+      "author": {
+        "anna": "Anna Nowak",
+        "marek": "Marek Wiśniewski",
+        "katarzyna": "Katarzyna Zielińska",
+        "tomek": "Tomek Lewandowski"
+      },
+      "ergonomicStations": "Implemented ergonomic workstation adjustments on Line B.",
+      "safetyProtocol": "Updated safety protocol for forklift operations.",
+      "qualityChecklist": "Introduced new quality checklist for incoming materials.",
+      "toolOrganization": "Reorganized tool storage using 5S methodology.",
+      "name": {
+        "assembly": "Assembly",
+        "warehouse": "Warehouse",
+        "quality": "Quality Control",
+        "maintenance": "Maintenance"
+      }
+    },
+    "suggestion": {
+      "trigger": "Make a Suggestion",
+      "sections": {
+        "submissions": "Submissions",
+        "resources": "Resources",
+        "community": "Community"
+      },
+      "mySubmissions": "My Submissions",
+      "departmentSubmissions": "Department Submissions",
+      "organizationSubmissions": "Organization Submissions",
+      "howItWorks": "How It Works",
+      "tutorial": "Tutorial",
+      "challenges": "Challenges",
+      "rankingsAwards": "Rankings & Awards",
+      "surveys": "Surveys"
+    },
+    "user": {
+      "name": "Jan Kowalski",
+      "role": "Line Operator"
+    },
+    "version": "v2.5.1 Nexus Pro"
   }
 }

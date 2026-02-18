@@ -7,8 +7,7 @@
   "login": {
     "heading": "KZN Nexus",
     "subheading": "Zainicjuj swoją przestrzeń ciągłego doskonalenia.",
-    "emailLabel": "Adres e-mail",
-    "emailPlaceholder": "dev@kznnexus.io",
+    "emailLabel": "Email",
     "passwordLabel": "Hasło",
     "passwordPlaceholder": "••••••••••••",
     "forgotPassword": "Zapomniałeś hasła?",
@@ -24,8 +23,8 @@
     "showPassword": "Pokaż hasło",
     "hidePassword": "Ukryj hasło",
     "errors": {
-      "emailRequired": "Adres e-mail jest wymagany",
-      "emailInvalid": "Wprowadź prawidłowy adres e-mail",
+      "emailRequired": "Email jest wymagany",
+      "emailInvalid": "Wprowadź prawidłowy adres email",
       "passwordRequired": "Hasło jest wymagane",
       "passwordMinLength": "Hasło musi mieć co najmniej 8 znaków",
       "passwordUppercase": "Hasło musi zawierać co najmniej jedną wielką literę",
@@ -44,12 +43,154 @@
       "limitExceeded": "Przekroczono limit prób. Spróbuj ponownie później.",
       "alreadyAuthenticated": "Jesteś już zalogowany.",
       "network": "Błąd sieci. Sprawdź swoje połączenie.",
-      "unknown": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie."
+      "unknown": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie.",
+      "invalidPassword": "Nowe hasło nie spełnia wymagań.",
+      "passwordResetRequired": "Wymagane jest zresetowanie hasła. Skontaktuj się z pomocą techniczną."
+    }
+  },
+  "newPassword": {
+    "heading": "Ustaw nowe hasło",
+    "subheading": "Twoje tymczasowe hasło wygasło. Ustaw nowe hasło.",
+    "newPasswordLabel": "Nowe hasło",
+    "confirmPasswordLabel": "Potwierdź hasło",
+    "submit": "Ustaw hasło",
+    "submitting": "Ustawianie hasła...",
+    "backToLogin": "Powrót do logowania",
+    "errors": {
+      "required": "Nowe hasło jest wymagane",
+      "confirmRequired": "Proszę potwierdzić hasło",
+      "minLength": "Hasło musi mieć co najmniej 8 znaków",
+      "uppercase": "Hasło musi zawierać co najmniej jedną wielką literę",
+      "lowercase": "Hasło musi zawierać co najmniej jedną małą literę",
+      "number": "Hasło musi zawierać co najmniej jedną cyfrę",
+      "special": "Hasło musi zawierać co najmniej jeden znak specjalny",
+      "mismatch": "Hasła nie są zgodne"
     }
   },
   "dashboard": {
     "heading": "Panel główny",
     "welcome": "Witaj, {{userId}}",
-    "logout": "Wyloguj"
+    "logout": "Wyloguj",
+    "greeting": "Dzień dobry, Jan",
+    "subtitle": "Panel zgłoszeń i statystyk",
+    "submitNewIdea": "Zgłoś nowy pomysł",
+    "sidebar": {
+      "dashboard": "Pulpit",
+      "mySubmissions": "Moje Zgłoszenia",
+      "rankings": "Rankingi",
+      "rewards": "Nagrody",
+      "system": "System",
+      "settings": "Ustawienia",
+      "logout": "Wyloguj",
+      "notifications": "Powiadomienia",
+      "obligations": "Obowiązki",
+      "social": "Społeczność",
+      "collapse": "Zwiń panel boczny",
+      "expand": "Rozwiń panel boczny"
+    },
+    "stats": {
+      "points": "Liczba Punktów",
+      "ranking": "Miejsce w Rankingu",
+      "submissions": "Wszystkie Zgłoszenia",
+      "implemented": "Wdrożone Sugestie",
+      "thisMonth": "+50 w tym miesiącu",
+      "positions": "2 poz",
+      "successRate": "50% skuteczności",
+      "trend": {
+        "pointsUp": "+12% vs ost. miesiąc",
+        "rankingUp": "+3 pozycje",
+        "submissionsUp": "+18% vs ost. miesiąc",
+        "implementedFlat": "Bez zmian vs ost. miesiąc"
+      }
+    },
+    "statuses": {
+      "title": "Status Zgłoszeń",
+      "new": "Nowe",
+      "inVerification": "W weryfikacji",
+      "inImplementation": "W trakcie wdrożenia",
+      "completed": "Zrealizowane",
+      "rejected": "Odrzucone"
+    },
+    "chart": {
+      "title": "Efektywność Zgłoszeń",
+      "subtitle": "Całkowite vs Zrealizowane (Ostatnie 6 miesięcy)",
+      "thirtyDays": "30 Dni",
+      "sixMonths": "6 Miesięcy",
+      "year": "Rok",
+      "allSubmissions": "Wszystkie zgłoszenia",
+      "implemented": "Wdrożone",
+      "avgDays": "Śr. czas wdrożenia (dni)",
+      "months": {
+        "jan": "STY",
+        "feb": "LUT",
+        "mar": "MAR",
+        "apr": "KWI",
+        "may": "MAJ",
+        "jun": "CZE"
+      }
+    },
+    "streak": {
+      "title": "Seria Kaizen",
+      "days": "{{count}} dni z rzędu",
+      "best": "Rekord: {{count}} dni"
+    },
+    "activity": {
+      "title": "Ostatnia Aktywność",
+      "tabMyActivity": "Moja Aktywność",
+      "tabDepartment": "Zmiany w Dziale",
+      "ideaAccepted": "Pomysł zaakceptowany",
+      "ideaAcceptedDesc": "Zgłoszenie <mono>#2941</mono> zostało przyjęte.",
+      "newComment": "Nowy komentarz",
+      "newCommentDesc": "Kierownik zmiany dodał uwagę.",
+      "actionRequired": "Wymagana akcja",
+      "actionRequiredDesc": "Uzupełnij opis w zgłoszeniu <mono>#2930</mono>.",
+      "reward": "Nagroda",
+      "rewardDesc": "+50 pkt przyznano za innowacyjność.",
+      "time": {
+        "twoHoursAgo": "2 godz. temu",
+        "yesterday": "Wczoraj, 14:30",
+        "twoDaysAgo": "2 dni temu",
+        "threeDaysAgo": "3 dni temu"
+      }
+    },
+    "department": {
+      "author": {
+        "anna": "Anna Nowak",
+        "marek": "Marek Wiśniewski",
+        "katarzyna": "Katarzyna Zielińska",
+        "tomek": "Tomek Lewandowski"
+      },
+      "ergonomicStations": "Wdrożono ergonomiczne regulacje stanowisk na Linii B.",
+      "safetyProtocol": "Zaktualizowano protokół bezpieczeństwa obsługi wózków widłowych.",
+      "qualityChecklist": "Wprowadzono nową listę kontrolną jakości materiałów przychodzących.",
+      "toolOrganization": "Zreorganizowano magazyn narzędzi metodą 5S.",
+      "name": {
+        "assembly": "Montaż",
+        "warehouse": "Magazyn",
+        "quality": "Kontrola Jakości",
+        "maintenance": "Utrzymanie Ruchu"
+      }
+    },
+    "suggestion": {
+      "trigger": "Zgłoś sugestię",
+      "sections": {
+        "submissions": "Zgłoszenia",
+        "resources": "Zasoby",
+        "community": "Społeczność"
+      },
+      "mySubmissions": "Moje Zgłoszenia",
+      "departmentSubmissions": "Zgłoszenia Działu",
+      "organizationSubmissions": "Zgłoszenia Organizacji",
+      "howItWorks": "Jak to działa",
+      "tutorial": "Samouczek",
+      "challenges": "Wyzwania",
+      "rankingsAwards": "Rankingi i Nagrody",
+      "surveys": "Ankiety"
+    },
+    "user": {
+      "name": "Jan Kowalski",
+      "role": "Operator Linii"
+    },
+    "version": "v2.5.1 Nexus Pro"
   }
 }

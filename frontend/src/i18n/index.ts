@@ -1,10 +1,10 @@
-import i18n from 'i18next'
-import LanguageDetector from 'i18next-browser-languagedetector'
-import { initReactI18next } from 'react-i18next'
+import i18n from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import { initReactI18next } from "react-i18next";
 
-import de from './locales/de.json'
-import en from './locales/en.json'
-import pl from './locales/pl.json'
+import de from "./locales/de.json";
+import en from "./locales/en.json";
+import pl from "./locales/pl.json";
 
 void i18n
   .use(LanguageDetector)
@@ -15,11 +15,11 @@ void i18n
       en: { translation: en },
       pl: { translation: pl },
     },
-    fallbackLng: 'en',
-    supportedLngs: ['en', 'pl', 'de'],
+    fallbackLng: "en",
+    supportedLngs: ["en", "pl", "de"],
     interpolation: {
       escapeValue: false,
     },
-  })
+  });
 
-export default i18n
+export default i18n;

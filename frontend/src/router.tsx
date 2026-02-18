@@ -1,20 +1,20 @@
-import { createBrowserRouter, Navigate } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import ProtectedRoute from '@/components/features/auth/ProtectedRoute'
-import DashboardPage from '@/pages/DashboardPage'
-import LoginPage from '@/pages/LoginPage'
+import ProtectedRoute from "@/components/features/auth/ProtectedRoute";
+import DashboardPage from "@/pages/DashboardPage";
+import LoginPage from "@/pages/LoginPage";
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Navigate to="/dashboard" replace />,
   },
   {
-    path: '/login',
+    path: "/login",
     element: <LoginPage />,
   },
   {
-    path: '/dashboard',
+    path: "/dashboard",
     element: (
       <ProtectedRoute>
         <DashboardPage />
@@ -22,19 +22,19 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: '/forgot-password',
+    path: "/forgot-password",
     element: <div>Forgot Password</div>,
   },
   {
-    path: '/register',
+    path: "/register",
     element: <div>Register</div>,
   },
   {
-    path: '/privacy',
+    path: "/privacy",
     element: <div>Privacy Policy</div>,
   },
   {
-    path: '/terms',
+    path: "/terms",
     element: <div>Terms of Service</div>,
   },
-])
+]);
