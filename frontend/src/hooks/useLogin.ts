@@ -6,6 +6,7 @@ import {
   completeNewPassword,
   loginWithCredentials,
 } from "@/services/authService";
+import { acceptRegulations } from "@/services/regulationsService";
 
 function mapCognitoError(error: unknown): string {
   const name = error instanceof Error ? error.name : "";
@@ -47,7 +48,7 @@ export function useLogin() {
       const result = await loginWithCredentials(email, password);
       if (result.isSignedIn) {
         await refreshUser();
-        navigate("/dashboard");
+        void navigate("/dashboard");
       } else {
         setChallengeStep(result.nextStep.signInStep);
       }
@@ -64,9 +65,26 @@ export function useLogin() {
     try {
       const result = await completeNewPassword(newPassword);
       if (result.isSignedIn) {
-        await refreshUser();
-        navigate("/dashboard");
+        setChallengeStep("REGULATIONS_ACCEPTANCE");
       }
+    } catch (error) {
+      setAuthError(mapCognitoError(error));
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const submitRegulationsAcceptance = async () => {
+    setIsSubmitting(true);
+    setAuthError(null);
+    try {
+      await acceptRegulations({
+        termsOfService: true,
+        privacyPolicy: true,
+        acceptedAt: new Date().toISOString(),
+      });
+      await refreshUser();
+      void navigate("/dashboard");
     } catch (error) {
       setAuthError(mapCognitoError(error));
     } finally {
@@ -84,6 +102,7 @@ export function useLogin() {
   return {
     login,
     submitNewPassword,
+    submitRegulationsAcceptance,
     isSubmitting,
     authError,
     clearAuthError,

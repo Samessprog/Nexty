@@ -42,7 +42,9 @@ describe("Sidebar", () => {
       </TestWrapper>,
     );
     expect(screen.getByText("Dashboard")).toBeInTheDocument();
-    expect(screen.getAllByText("My Submissions").length).toBeGreaterThanOrEqual(1);
+    expect(screen.getAllByText("My Submissions").length).toBeGreaterThanOrEqual(
+      1,
+    );
     expect(screen.getAllByText("Rankings").length).toBeGreaterThanOrEqual(1);
     expect(screen.getByText("Rewards")).toBeInTheDocument();
     expect(screen.getByText("Settings")).toBeInTheDocument();

@@ -38,7 +38,9 @@ describe("authService", () => {
 
     it("returns null when getCurrentUser throws", async () => {
       const { getCurrentUser } = await import("aws-amplify/auth");
-      vi.mocked(getCurrentUser).mockRejectedValueOnce(new Error("not signed in"));
+      vi.mocked(getCurrentUser).mockRejectedValueOnce(
+        new Error("not signed in"),
+      );
       const user = await checkCurrentUser();
       expect(user).toBeNull();
     });

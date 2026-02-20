@@ -34,7 +34,10 @@ describe("ActivityFeed", () => {
   it("renders tab buttons", () => {
     render(
       <TestWrapper>
-        <ActivityFeed items={mockItems} departmentChanges={mockDepartmentChanges} />
+        <ActivityFeed
+          items={mockItems}
+          departmentChanges={mockDepartmentChanges}
+        />
       </TestWrapper>,
     );
     expect(screen.getByText("My Activity")).toBeInTheDocument();
@@ -44,7 +47,10 @@ describe("ActivityFeed", () => {
   it("renders all activity items in My Activity tab by default", () => {
     render(
       <TestWrapper>
-        <ActivityFeed items={mockItems} departmentChanges={mockDepartmentChanges} />
+        <ActivityFeed
+          items={mockItems}
+          departmentChanges={mockDepartmentChanges}
+        />
       </TestWrapper>,
     );
     expect(screen.getByText("Idea accepted")).toBeInTheDocument();
@@ -55,7 +61,10 @@ describe("ActivityFeed", () => {
     const user = userEvent.setup();
     render(
       <TestWrapper>
-        <ActivityFeed items={mockItems} departmentChanges={mockDepartmentChanges} />
+        <ActivityFeed
+          items={mockItems}
+          departmentChanges={mockDepartmentChanges}
+        />
       </TestWrapper>,
     );
     await user.click(screen.getByText("Department Changes"));
@@ -66,7 +75,10 @@ describe("ActivityFeed", () => {
   it("renders the more button", () => {
     render(
       <TestWrapper>
-        <ActivityFeed items={mockItems} departmentChanges={mockDepartmentChanges} />
+        <ActivityFeed
+          items={mockItems}
+          departmentChanges={mockDepartmentChanges}
+        />
       </TestWrapper>,
     );
     expect(screen.getByTestId("activity-more")).toBeInTheDocument();

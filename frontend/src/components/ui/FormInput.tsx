@@ -26,7 +26,7 @@ export default function FormInput({
 
   return (
     <div className="space-y-1.5">
-      {labelExtra && (
+      {!!labelExtra && (
         <div className="flex items-center justify-end">{labelExtra}</div>
       )}
 

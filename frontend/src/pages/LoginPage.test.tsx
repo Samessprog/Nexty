@@ -6,6 +6,7 @@ import TestWrapper from "@/test/TestI18nProvider";
 const mockUseLogin = {
   login: vi.fn(),
   submitNewPassword: vi.fn(),
+  submitRegulationsAcceptance: vi.fn(),
   isSubmitting: false,
   authError: null,
   clearAuthError: vi.fn(),
@@ -81,5 +82,21 @@ describe("LoginPage", () => {
     ).toBeInTheDocument();
     expect(screen.getByLabelText("New Password")).toBeInTheDocument();
     expect(screen.getByLabelText("Confirm Password")).toBeInTheDocument();
+  });
+
+  it("renders RegulationsForm when challengeStep is REGULATIONS_ACCEPTANCE", () => {
+    mockUseLogin.challengeStep = "REGULATIONS_ACCEPTANCE";
+    render(
+      <TestWrapper>
+        <LoginPage />
+      </TestWrapper>,
+    );
+    expect(screen.getByText("Terms & Conditions")).toBeInTheDocument();
+    expect(
+      screen.getByText(/review and accept the regulations/i),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /accept & continue/i }),
+    ).toBeInTheDocument();
   });
 });

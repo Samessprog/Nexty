@@ -70,9 +70,7 @@ describe("LoginForm", () => {
       await user.click(screen.getByRole("button", { name: /login/i }));
 
       await waitFor(() => {
-        expect(
-          screen.getByText("Email is required"),
-        ).toBeInTheDocument();
+        expect(screen.getByText("Email is required")).toBeInTheDocument();
         expect(screen.getByText("Password is required")).toBeInTheDocument();
       });
     });
@@ -144,10 +142,7 @@ describe("LoginForm", () => {
         </TestWrapper>,
       );
 
-      await user.type(
-        screen.getByLabelText("Email"),
-        "user@example.com",
-      );
+      await user.type(screen.getByLabelText("Email"), "user@example.com");
       await user.type(screen.getByLabelText("Password"), "StrongP@ss1");
       await user.click(screen.getByRole("button", { name: /login/i }));
 

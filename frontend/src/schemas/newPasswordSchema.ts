@@ -10,9 +10,7 @@ export const newPasswordSchema = z
       .regex(/[a-z]/, "newPassword.errors.lowercase")
       .regex(/[0-9]/, "newPassword.errors.number")
       .regex(/[^A-Za-z0-9]/, "newPassword.errors.special"),
-    confirmPassword: z
-      .string()
-      .min(1, "newPassword.errors.confirmRequired"),
+    confirmPassword: z.string().min(1, "newPassword.errors.confirmRequired"),
   })
   .refine((data) => data.newPassword === data.confirmPassword, {
     message: "newPassword.errors.mismatch",

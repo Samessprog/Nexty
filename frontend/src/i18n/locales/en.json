@@ -67,6 +67,21 @@
       "mismatch": "Passwords do not match"
     }
   },
+  "regulations": {
+    "heading": "Terms & Conditions",
+    "subheading": "Please review and accept the regulations to continue.",
+    "termsLabel": "I accept the",
+    "termsLink": "Terms of Service",
+    "privacyLabel": "I accept the",
+    "privacyLink": "Privacy Policy",
+    "submit": "Accept & Continue",
+    "submitting": "Submitting...",
+    "backToLogin": "Back to Login",
+    "errors": {
+      "termsRequired": "You must accept the Terms of Service",
+      "privacyRequired": "You must accept the Privacy Policy"
+    }
+  },
   "dashboard": {
     "heading": "Dashboard",
     "welcome": "Welcome, {{userId}}",

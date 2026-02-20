@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import LoginForm from "@/components/features/auth/LoginForm";
 import NewPasswordForm from "@/components/features/auth/NewPasswordForm";
+import RegulationsForm from "@/components/features/auth/RegulationsForm";
 import DesignPanel from "@/components/layout/DesignPanel";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import ThemeToggle from "@/components/ui/ThemeToggle";
@@ -14,6 +15,7 @@ export default function LoginPage() {
   const {
     login,
     submitNewPassword,
+    submitRegulationsAcceptance,
     isSubmitting,
     authError,
     clearAuthError,
@@ -23,6 +25,7 @@ export default function LoginPage() {
 
   const isNewPasswordChallenge =
     challengeStep === "CONFIRM_SIGN_IN_WITH_NEW_PASSWORD_REQUIRED";
+  const isRegulationsStep = challengeStep === "REGULATIONS_ACCEPTANCE";
 
   return (
     <div className="h-screen overflow-hidden flex">
@@ -49,18 +52,30 @@ export default function LoginPage() {
 
           <div className="mb-10">
             <h2 className="text-3xl font-black text-slate-900 dark:text-white tracking-tight mb-2 font-mono">
-              {isNewPasswordChallenge
-                ? t("newPassword.heading")
-                : t("login.heading")}
+              {isRegulationsStep
+                ? t("regulations.heading")
+                : isNewPasswordChallenge
+                  ? t("newPassword.heading")
+                  : t("login.heading")}
             </h2>
             <p className="text-slate-500 dark:text-slate-400 text-sm">
-              {isNewPasswordChallenge
-                ? t("newPassword.subheading")
-                : t("login.subheading")}
+              {isRegulationsStep
+                ? t("regulations.subheading")
+                : isNewPasswordChallenge
+                  ? t("newPassword.subheading")
+                  : t("login.subheading")}
             </p>
           </div>
 
-          {isNewPasswordChallenge ? (
+          {isRegulationsStep ? (
+            <RegulationsForm
+              onSubmit={submitRegulationsAcceptance}
+              onBack={resetChallenge}
+              isSubmitting={isSubmitting}
+              authError={authError}
+              clearAuthError={clearAuthError}
+            />
+          ) : isNewPasswordChallenge ? (
             <NewPasswordForm
               onSubmit={submitNewPassword}
               onBack={resetChallenge}

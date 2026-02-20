@@ -32,7 +32,10 @@ export default function DashboardPage() {
       {/* Chart + Activity feed */}
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <EfficiencyChart data={chartData} />
-        <ActivityFeed items={activityItems} departmentChanges={departmentChanges} />
+        <ActivityFeed
+          items={activityItems}
+          departmentChanges={departmentChanges}
+        />
       </div>
     </DashboardLayout>
   );
