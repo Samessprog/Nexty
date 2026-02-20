@@ -65,7 +65,7 @@ export default function LanguageSwitcher() {
         />
       </button>
 
-      {isOpen && (
+      {!!isOpen && (
         <ul
           role="listbox"
           className="glass-panel dark:bg-popover/90 dark:border-border absolute right-0 top-full mt-1 z-50 min-w-[160px] rounded-xl py-1 shadow-lg"
@@ -78,6 +78,12 @@ export default function LanguageSwitcher() {
                 role="option"
                 aria-selected={isSelected}
                 onClick={() => selectLanguage(lang.code)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    selectLanguage(lang.code);
+                  }
+                }}
+                tabIndex={0}
                 className={`flex items-center gap-2 px-3 py-2 text-xs cursor-pointer transition-colors hover:bg-accent hover:text-foreground ${
                   isSelected
                     ? "text-foreground font-semibold"
@@ -86,7 +92,7 @@ export default function LanguageSwitcher() {
               >
                 <span className="w-6 font-mono">{lang.code.toUpperCase()}</span>
                 <span className="flex-1">{lang.label}</span>
-                {isSelected && <Check size={14} weight="bold" />}
+                {!!isSelected && <Check size={14} weight="bold" />}
               </li>
             );
           })}

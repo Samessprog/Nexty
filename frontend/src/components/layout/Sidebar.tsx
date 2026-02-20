@@ -36,7 +36,10 @@ interface AccordionSubItem {
 const NOTIFICATIONS_ITEMS: AccordionSubItem[] = [
   { labelKey: "dashboard.suggestion.mySubmissions", icon: ClipboardText },
   { labelKey: "dashboard.suggestion.departmentSubmissions", icon: UsersThree },
-  { labelKey: "dashboard.suggestion.organizationSubmissions", icon: ListBullets },
+  {
+    labelKey: "dashboard.suggestion.organizationSubmissions",
+    icon: ListBullets,
+  },
 ];
 
 const OBLIGATIONS_ITEMS: AccordionSubItem[] = [
@@ -140,7 +143,7 @@ export default function Sidebar({
             </button>
           )}
         </div>
-        {collapsed && (
+        {!!collapsed && (
           <div className="flex justify-center py-2">
             <button
               type="button"
@@ -246,7 +249,6 @@ export default function Sidebar({
             </p>
           </div>
         )}
-
       </aside>
     </>
   );

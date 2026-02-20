@@ -67,6 +67,21 @@
       "mismatch": "Passwörter stimmen nicht überein"
     }
   },
+  "regulations": {
+    "heading": "Nutzungsbedingungen",
+    "subheading": "Bitte lesen und akzeptieren Sie die Bestimmungen, um fortzufahren.",
+    "termsLabel": "Ich akzeptiere die",
+    "termsLink": "Nutzungsbedingungen",
+    "privacyLabel": "Ich akzeptiere die",
+    "privacyLink": "Datenschutzrichtlinie",
+    "submit": "Akzeptieren & Fortfahren",
+    "submitting": "Wird gesendet...",
+    "backToLogin": "Zurück zur Anmeldung",
+    "errors": {
+      "termsRequired": "Sie müssen die Nutzungsbedingungen akzeptieren",
+      "privacyRequired": "Sie müssen die Datenschutzrichtlinie akzeptieren"
+    }
+  },
   "dashboard": {
     "heading": "Dashboard",
     "welcome": "Willkommen, {{userId}}",

@@ -1,5 +1,5 @@
-import { Envelope, SignIn, WarningCircle } from "@phosphor-icons/react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Envelope, SignIn, WarningCircle } from "@phosphor-icons/react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -73,7 +73,7 @@ export default function LoginForm({
           }
         />
 
-        {authError && (
+        {!!authError && (
           <div
             role="alert"
             className="flex items-center gap-2 rounded-md border border-destructive/50 bg-destructive/10 px-4 py-3 text-sm text-destructive"

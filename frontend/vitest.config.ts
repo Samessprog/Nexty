@@ -1,25 +1,25 @@
-import path from 'node:path'
+import path from "node:path";
 
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vitest/config'
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   plugins: [
     react({
       babel: {
-        plugins: [['babel-plugin-react-compiler']],
+        plugins: [["babel-plugin-react-compiler"]],
       },
     }),
   ],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      "@": path.resolve(__dirname, "./src"),
     },
   },
   test: {
     globals: true,
-    environment: 'jsdom',
-    setupFiles: ['./src/test/setup.ts'],
-    exclude: ['e2e/**', 'node_modules/**'],
+    environment: "jsdom",
+    setupFiles: ["./src/test/setup.ts"],
+    exclude: ["e2e/**", "node_modules/**"],
   },
-})
+});

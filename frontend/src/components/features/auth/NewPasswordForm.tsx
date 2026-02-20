@@ -1,5 +1,5 @@
-import { ArrowLeft, LockKey, WarningCircle } from "@phosphor-icons/react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { ArrowLeft, LockKey, WarningCircle } from "@phosphor-icons/react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 
@@ -66,7 +66,7 @@ export default function NewPasswordForm({
         onFocus={clearAuthError}
       />
 
-      {authError && (
+      {!!authError && (
         <div
           role="alert"
           className="flex items-center gap-2 rounded-md border border-destructive/50 bg-destructive/10 px-4 py-3 text-sm text-destructive"
@@ -77,11 +77,7 @@ export default function NewPasswordForm({
       )}
 
       <div className="flex flex-col gap-3 pt-2">
-        <Button
-          type="submit"
-          className="w-full group"
-          disabled={isSubmitting}
-        >
+        <Button type="submit" className="w-full group" disabled={isSubmitting}>
           <span>
             {isSubmitting
               ? t("newPassword.submitting")

@@ -67,6 +67,21 @@
       "mismatch": "Hasła nie są zgodne"
     }
   },
+  "regulations": {
+    "heading": "Regulamin",
+    "subheading": "Zapoznaj się z regulaminem i zaakceptuj go, aby kontynuować.",
+    "termsLabel": "Akceptuję",
+    "termsLink": "Regulamin serwisu",
+    "privacyLabel": "Akceptuję",
+    "privacyLink": "Politykę prywatności",
+    "submit": "Akceptuję i kontynuuję",
+    "submitting": "Przesyłanie...",
+    "backToLogin": "Powrót do logowania",
+    "errors": {
+      "termsRequired": "Musisz zaakceptować Regulamin serwisu",
+      "privacyRequired": "Musisz zaakceptować Politykę prywatności"
+    }
+  },
   "dashboard": {
     "heading": "Panel główny",
     "welcome": "Witaj, {{userId}}",

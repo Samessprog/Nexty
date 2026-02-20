@@ -1,6 +1,6 @@
+import type { AuthUser } from "aws-amplify/auth";
 import { createContext, useContext, useEffect, useState } from "react";
 import type { ReactNode } from "react";
-import type { AuthUser } from "aws-amplify/auth";
 
 import {
   checkCurrentUser,
@@ -30,7 +30,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   useEffect(() => {
-    checkCurrentUser()
+    void checkCurrentUser()
       .then(setUser)
       .finally(() => setIsLoading(false));
   }, []);

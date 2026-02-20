@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 import ActivityItem from "./ActivityItem";
 import DepartmentChangeItem from "./DepartmentChangeItem";
 
-import type { ActivityItemData, DepartmentChangeData } from "@/types/dashboard";
 import { cn } from "@/lib/utils";
+import type { ActivityItemData, DepartmentChangeData } from "@/types/dashboard";
 
 type ActiveTab = "myActivity" | "departmentChanges";
 
