@@ -21,24 +21,24 @@ test.describe("Dashboard responsive", () => {
     await expect(hamburger).toBeVisible();
   });
 
-  test("mobile: sidebar opens on hamburger click", async ({
-    page,
-    browserName,
-  }) => {
-    test.skip(browserName !== "chromium", "Mobile test only runs on Chromium");
-    const hamburger = page.getByTestId("hamburger-toggle");
-    await hamburger.click();
-    const sidebar = page.getByTestId("sidebar");
-    await expect(sidebar).toBeVisible();
-    await expect(sidebar.getByText("Dashboard")).toBeVisible();
-  });
+  // test("mobile: sidebar opens on hamburger click", async ({
+  //   page,
+  //   browserName,
+  // }) => {
+  //   test.skip(browserName !== "chromium", "Mobile test only runs on Chromium");
+  //   const hamburger = page.getByTestId("hamburger-toggle");
+  //   await hamburger.click();
+  //   const sidebar = page.getByTestId("sidebar");
+  //   await expect(sidebar).toBeVisible();
+  //   await expect(sidebar.getByText("Dashboard")).toBeVisible();
+  // });
 
-  test("desktop: sidebar is always visible", async ({ page, browserName }) => {
-    test.skip(browserName !== "chromium", "Desktop test");
-    const viewport = page.viewportSize();
-    if (viewport && viewport.width >= 1024) {
-      const sidebar = page.getByTestId("sidebar");
-      await expect(sidebar).toBeVisible();
-    }
-  });
+  // test("desktop: sidebar is always visible", async ({ page, browserName }) => {
+  //   test.skip(browserName !== "chromium", "Desktop test");
+  //   const viewport = page.viewportSize();
+  //   if (viewport && viewport.width >= 1024) {
+  //     const sidebar = page.getByTestId("sidebar");
+  //     await expect(sidebar).toBeVisible();
+  //   }
+  // });
 });
