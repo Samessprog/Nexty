@@ -19,3 +19,19 @@ services:
       - /app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true
+
+  postgres-db:
+      image: postgres:15-alpine
+      container_name: nexus-postgres
+      restart: always
+      environment:
+        POSTGRES_USER: nexus
+        POSTGRES_DB: nexus
+        POSTGRES_PASSWORD: supertajnehaslo123
+      ports:
+        - "5423:5432"
+      volumes:
+        - nexus_pg_data:/var/lib/postgresql/data
+
+volumes:
+  nexus_pg_data:

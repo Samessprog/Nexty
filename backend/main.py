@@ -1,7 +1,7 @@
 from fastapi import FastAPI
+from db.session import engine
+import models
 
 app = FastAPI()
 
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+models.Base.metadata.create_all(bind=engine)
