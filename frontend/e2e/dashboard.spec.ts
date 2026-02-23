@@ -3,8 +3,8 @@ import { expect, test } from "@playwright/test";
 test.describe("Dashboard", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/login");
-    await page.getByPlaceholder("dev@kznnexus.io").fill("test@kznnexus.io");
-    await page.getByPlaceholder("••••••••••••").fill("Test1234!");
+    await page.locator("#email").fill("test@kznnexus.io");
+    await page.locator("#password").fill("Test1234!");
     await page.getByRole("button", { name: "Login" }).click();
     await page.waitForURL("/dashboard");
   });
