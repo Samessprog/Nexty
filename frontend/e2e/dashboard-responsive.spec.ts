@@ -1,12 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { loginAndNavigateToDashboard } from "./helpers/login";
 
 test.describe("Dashboard responsive", () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto("/login");
-    await page.locator("#email").fill("test@kznnexus.io");
-    await page.locator("#password").fill("Test1234!");
-    await page.getByRole("button", { name: "Login" }).click();
-    await page.waitForURL("/dashboard");
+    await loginAndNavigateToDashboard(page);
   });
 
   test("mobile: sidebar is hidden by default, hamburger visible", async ({

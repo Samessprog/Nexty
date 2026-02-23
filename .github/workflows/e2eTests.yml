@@ -33,6 +33,12 @@ jobs:
         env:
           VITE_USER_POOL_ID: ${{ secrets.VITE_USER_POOL_ID }}
           VITE_USER_POOL_CLIENT_ID: ${{ secrets.VITE_USER_POOL_CLIENT_ID }}
+      - name: Verify Cognito config in build
+        run: |
+          if grep -r 'undefined' dist/assets/*.js | grep -q 'userPoolId.*undefined\|userPoolClientId.*undefined'; then
+            echo "ERROR: Cognito env vars not baked into build"
+            exit 1
+          fi
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
