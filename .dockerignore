@@ -1,0 +1,12 @@
+./terraform
+claud.md
+makefile
+README.md
+lambda
+.workflows
+.idea
+node_modules/
+pre-commit
+skills
+.DS_Store
+dist/
